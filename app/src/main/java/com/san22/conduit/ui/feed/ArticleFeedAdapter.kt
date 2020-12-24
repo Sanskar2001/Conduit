@@ -11,6 +11,9 @@ import com.san22.api.model.Article
 import com.san22.api.model.ArticlePojo
 import com.san22.conduit.R
 import com.san22.conduit.databinding.ListItemArticleBinding
+import com.san22.conduit.ui.extensions.timeStamp
+import com.san22.conduit.ui.extensions.loadImage
+
 
 
 class ArticleFeedAdapter(val onArticleClicked: (slug: String) -> Unit): androidx.recyclerview.widget.ListAdapter<ArticlePojo, ArticleFeedAdapter.ArticleViewHolder>(
@@ -44,8 +47,8 @@ class ArticleFeedAdapter(val onArticleClicked: (slug: String) -> Unit): androidx
                              authorTextView.text = article.author.username
                              titleTextView.text = article.title
                              bodySnippetTextView.text = article.body
-                             dateTextView.text = article.createdAt
-//                             avatarImageView.loadimage(article.author.image, true)
+                             dateTextView.timeStamp = article.createdAt.toString()
+                             avatarImageView.loadImage(article.author.image, true)
 
                              root.setOnClickListener { onArticleClicked(article.slug.toString()) }
                          }

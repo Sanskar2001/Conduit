@@ -18,7 +18,9 @@
             android:title="@string/menu_slideshow" />
 
         <item android:id="@+id/nav_globalFeed"
-            android:title="Global Feed">
+            android:title="Global Feed"
+            android:icon="@drawable/baseline_article_teal_a700_24dp"
+            android:iconTint="@android:color/darker_gray">
         </item>
     </group>
 </menu>
