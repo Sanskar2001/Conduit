@@ -22,5 +22,11 @@
             android:icon="@drawable/baseline_article_teal_a700_24dp"
             android:iconTint="@android:color/darker_gray">
         </item>
+
+        <item android:id="@+id/nav_auth"
+            android:title="Login/Sign Up"
+            android:icon="@drawable/baseline_article_teal_a700_24dp"
+            android:iconTint="@android:color/darker_gray">
+        </item>
     </group>
 </menu>

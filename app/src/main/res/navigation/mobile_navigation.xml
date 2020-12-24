@@ -26,5 +26,11 @@
         android:id="@+id/nav_globalFeed"
         android:name="com.san22.conduit.ui.feed.GlobalFeedFragment"
         android:label="@string/menu_globalFeed"
-        tools:layout="@layout/fragment_slideshow"></fragment>
+        tools:layout="@layout/fragment_slideshow">
+    </fragment>
+    <fragment
+        android:id="@+id/nav_auth"
+        android:name="com.san22.conduit.ui.auth.AuthFragment"
+        android:label="Welcome" tools:layout="@layout/fragment_auth"></fragment>
+
 </navigation>
